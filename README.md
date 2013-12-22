@@ -1,4 +1,4 @@
-nl
+Sea
 ==
 
 This is a new Jekyll blog theme - sea.
