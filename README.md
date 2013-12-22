@@ -1,8 +1,9 @@
 nl
 ==
 
-This is a new Jekyll blog theme - nl.
-demo:http://jekylltheme.github.io/nl
+This is a new Jekyll blog theme - sea.
+
+demo:http://jekylltheme.github.io/sea
 
 Configration
 ==
