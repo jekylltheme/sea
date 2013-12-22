@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>{% include header.html %}</head>
+<body>
+
+    <div class="bg_img1"></div>
+    <div class="bg_img2"></div>
+    <div class="bg_img3"></div>
+    <div class="bg_img4"></div>
+
+    <div class="site">
+        <span id="site-name">
+            <h1>
+                <a href="{{ site.baseurl }}/index.html">{{ site.site_name }}</a>
+            </h1>
+        </span>
+        {% if site.author.name %}
+        <div id="author-name" class="text-right">{{ site.author.name }}</div>
+        {% endif %}
+        <ul id="contact-info" class="list-unstyled list-inline text-right">
+            {% if site.author.github %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}"> <i class="fa fa-github-alt fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.twitter %}
+            <li>
+                <a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}"> <i class="fa fa-twitter fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.email %}
+            <li>
+                <a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+                    <i class="fa fa-envelope fa-lg"></i>
+                </a>
+            </li>
+            {% endif %}
+            <li>
+                <a class="btn btn-default btn-sm" href="{{ site.baseurl }}/{{ site.rss_path }}">
+                    <i class="fa fa-rss fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+        
+        {{ content }}
+
+    {% include footer.html %}
+    </div>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/lib/jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/src/app.js"></script>
+</body>
+</html>
