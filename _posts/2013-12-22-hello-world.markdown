@@ -5,7 +5,7 @@ date:   2013-12-22
 categories: categroy1
 tags: tag1
 ---
-This is a new Jekyll blog theme - nl.
+This is a new Jekyll blog theme - Sea.
 
 Configration in the file `_config.yml`:
 {% highlight yaml linenos %}
